@@ -1,0 +1,14 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Add Review</h1>
+        <p>review all of your favorite restaurants!!</p>
+    </div>
+
+    <form method="post" action="/processform">
+      Restaurant <input type="text" name="url"> <br>
+      review: <textarea name="theComments"></textarea>
+      <input type="submit">
+    </form>
+
+<%- include('bootfooter') -%>
